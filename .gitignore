@@ -1,0 +1,11 @@
+# aim of this git is to push only .cpp .h files on to remote
+# to ignore all files
+*
+#now, to whitelist anything thats a directory
+!*/
+#add all file types we need to whitelist
+!*.cpp
+!*.h
+!*.c 
+!README.md
+!.gitignore
