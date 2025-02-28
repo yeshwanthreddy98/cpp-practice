@@ -3,7 +3,7 @@
 //to demonstrate the friend function and friend class
 /*
 friend function and class can be declared in any section public, private
-or protected , these act as internal to a class like 
+or protected , these act as internal to a class like
 they can even access the private variables
 */
 
@@ -37,11 +37,11 @@ void showPrivateVars(Sample& s)
 	std::cout << s.x << " " << s.y << std::endl;
 }
 
-int main()
-{
-	Sample s;
-	s.disp();
-	showPrivateVars(s);
-	FriendToSample fs;
-	fs.showSampleVars(s);
-}
+//int main()
+//{
+//	Sample s;
+//	s.disp();
+//	showPrivateVars(s);
+//	FriendToSample fs;
+//	fs.showSampleVars(s);
+//}
