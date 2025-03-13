@@ -30,7 +30,14 @@ class Multivector
 		T data;
 		void* next;
 	};
+	void* head;
 
+	template<typename T>
+	Multivector(T data)
+	{
+		head = new node<T>;
+
+	}
 
 };
 
