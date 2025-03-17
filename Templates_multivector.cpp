@@ -28,14 +28,25 @@ class Multivector
 	struct node
 	{
 		T data;
-		void* next;
+		void* next = nullptr;
 	};
-	void* head;
+	void* head = nullptr;
+	void* tail = nullptr;
+
+public:
 
 	template<typename T>
 	Multivector(T data)
 	{
 		head = new node<T>;
+		node<T>* curr = (node<T>*)head;
+		curr->data = data;
+
+	}
+
+	template<typename T>
+	void push_back(T data)
+	{
 
 	}
 
