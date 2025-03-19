@@ -15,5 +15,6 @@ struct node
 //
 //	//int a = 1;
 //	//ptr = &a;
-//	std::cout << ptr->data << std::endl << typeid(ptr).name() << std::endl;
+//	/*std::cout << ptr->data << std::endl << typeid(ptr).name() << std::endl;*/
+//	std::cout << sizeof(ptr) << std::endl;
 //}
