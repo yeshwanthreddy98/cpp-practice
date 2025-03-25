@@ -9,5 +9,6 @@ public:
 	{
 		this->len = len;
 		ptr = new int[len];
+
 	}
 };
