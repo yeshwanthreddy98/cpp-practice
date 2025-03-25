@@ -13,9 +13,20 @@ void printfibo(int n)
 	}
 }
 
+void dispInt(int sum, int diff)
+{
+	std::cout << "sum is: " << sum << std::endl << "difference is: " << diff << std::endl;
+}
+
+void calc(int a, int b, void(*disp)(int, int))
+{
+	disp(a + b, a - b);
+}
+
 //int main()
 //{
-//	void(*fiboptr)(int);
-//	fiboptr = printfibo;
-//	fiboptr(10);
+//	//void(*fiboptr)(int);
+//	//fiboptr = printfibo;
+//	//fiboptr(10);
+//	calc(8, 5, dispInt);
 //}
