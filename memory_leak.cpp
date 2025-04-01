@@ -39,17 +39,17 @@ bool detectMemoryLeaks(const string& filename) {
 	return false;  // No memory leaks
 }
 
-int main() {
-	string filename;
-	cout << "Enter the path to the C++ source file: ";
-	cin >> filename;
-
-	if (detectMemoryLeaks(filename)) {
-		cout << "Memory leak detected!" << endl;
-	}
-	else {
-		cout << "No memory leaks detected." << endl;
-	}
-
-	return 0;
-}
+//int main() {
+//	string filename;
+//	cout << "Enter the path to the C++ source file: ";
+//	cin >> filename;
+//
+//	if (detectMemoryLeaks(filename)) {
+//		cout << "Memory leak detected!" << endl;
+//	}
+//	else {
+//		cout << "No memory leaks detected." << endl;
+//	}
+//
+//	return 0;
+//}
