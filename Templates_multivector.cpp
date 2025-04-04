@@ -32,7 +32,6 @@ class Multivector
 	};
 	void* head = nullptr;
 	void* tail = nullptr;
-
 public:
 
 	template<typename T>
