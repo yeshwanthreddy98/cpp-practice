@@ -11,17 +11,20 @@ void sum(int n)
 void print(int n)
 {
 	for (int i = 0;i < n;i++)
-		cout << i << endl;
+		/*cout << i << endl;*/
+		cout << "sub_thread\n";
 }
 
 int main()
 {
 	//std::thread th(sum, 10);
 	std::thread pr(print, 10);
-	pr.detach();
-	for (int i = 100;i < 110;i++)
-		cout << i << endl;
+	/*pr.detach();*/
+	for (int i = 70;i < 110;i++)
+		/*cout << i << endl;*/
+		cout << "main_thread\n";
+
 	//th.join();
-	//pr.join();
+	pr.join();
 	return 0;
 }
