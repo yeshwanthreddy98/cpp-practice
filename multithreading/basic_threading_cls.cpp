@@ -1,8 +1,9 @@
 #include<iostream>
 #include <thread>
 
-//https ://github.com/methylDragon/coding-notes/blob/master/C++/07%20C++%20-%20Threading%20and%20Concurrency.md
+// https ://github.com/methylDragon/coding-notes/blob/master/C++/07%20C++%20-%20Threading%20and%20Concurrency.md
 //https://www.bogotobogo.com/cplusplus/files/CplusplusConcurrencyInAction_PracticalMultithreading.pdf
+//https://akrzemi1.wordpress.com/2012/11/14/not-using-stdthread/
 
 using namespace std;
 void sum(int n)

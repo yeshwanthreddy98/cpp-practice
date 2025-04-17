@@ -3,7 +3,7 @@
 //https://stackoverflow.com/questions/10673585/start-thread-with-member-function
 //https://cplusplus.com/forum/beginner/115115/
 
-void fib(int n)
+void fib(int& n)
 {
 	std::cout << "fibonacci started" << std::endl;
 	int temp1 = 1, temp2 = 2;
@@ -18,14 +18,17 @@ void fib(int n)
 			temp2 = curr;
 		}
 	}
+	n = n + 1;
 }
 
 class Sample
 {
 public:
-	void operator()()
+	int var = 2;
+	void operator()(const int& x)
 	{
 		std::cout << "overloading () opeator on Sample class object" << std::endl;
+		var = var * x;
 	}
 	void hv() {
 		std::cout << "function of sample" << std::endl;
@@ -33,20 +36,25 @@ public:
 };
 
 
-int main()
-{
-
-	std::thread fbr(fib, 10);
-	std::thread th([]() {std::cout << "thread" << std::endl;});
-	std::cout << "main_Thread started" << std::endl;
-	fbr.join();
-	std::cout << "sub_thread joined" << std::endl;
-	th.join();
-	std::thread hv(&Sample::hv, Sample());
-	std::thread op(&Sample::operator(), Sample());
-	op.join();
-	hv.join();
-
-
-	return 0;
-}
+//int main()
+//{
+//	int x = 10;
+//	//fib(x);
+//	std::thread fbr(fib, x);
+//	//std::thread th([]() {std::cout << "thread" << std::endl;});
+//	std::cout << "main_Thread started" << std::endl;
+//	fbr.join();
+//	std::cout << x << std::endl;
+//	//std::cout << "sub_thread joined" << std::endl;
+//	//th.join();
+//	//std::thread hv(&Sample::hv, Sample());
+//	//std::thread op(&Sample::operator(), Sample());
+//	//op.join();
+//	//hv.join();
+//	Sample s;
+//	std::thread th(&Sample::operator(), s, 10);
+//	th.join();
+//	std::cout << s.var << std::endl;
+//
+//	return 0;
+//}
