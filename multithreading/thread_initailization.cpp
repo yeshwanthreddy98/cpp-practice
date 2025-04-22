@@ -1,5 +1,6 @@
 #include<iostream>
 #include<thread>
+#include<chrono>
 //https://stackoverflow.com/questions/10673585/start-thread-with-member-function
 //https://cplusplus.com/forum/beginner/115115/
 
@@ -16,6 +17,7 @@ void fib(int& n)
 			std::cout << " " << i << " num: " << curr << std::endl;
 			temp1 = temp2;
 			temp2 = curr;
+			//std::this_thread::sleep_for(std::chrono::seconds(10));
 		}
 	}
 	n = n + 1;
