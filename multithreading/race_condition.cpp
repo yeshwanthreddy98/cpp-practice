@@ -9,15 +9,15 @@
 #include <thread>
 #include <mutex>
 
-std::mutex mtx;
+//std::mutex mtx;
 
 int counter = 0;
 
 void incrementCounter() {
 	for (int i = 0; i < 100000; ++i) {
-		mtx.lock();
+		//mtx.lock();
 		++counter;
-		mtx.unlock();
+		//mtx.unlock();
 	}
 }
 

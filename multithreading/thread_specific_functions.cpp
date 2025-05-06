@@ -22,15 +22,15 @@
 //	n = n + 1;
 //}
 
-int main()
-{
-	int x = 10;
-	auto this_id = std::this_thread::get_id();
-	std::cout << typeid(this_id).name() << std::endl;
-	std::cout << "main thread started with id: " << this_id << std::endl;
-	std::thread th(fib, std::ref(x));
-	std::cout << x << std::endl;
-	th.join();
-	std::cout << x << std::endl;
-	return 0;
-}
+//int main()
+//{
+//	int x = 10;
+//	//auto this_id = std::this_thread::get_id();
+//	//std::cout << typeid(this_id).name() << std::endl;
+//	//std::cout << "main thread started with id: " << this_id << std::endl;
+//	std::thread th(fib, std::ref(x));
+//	//std::cout << x << std::endl;
+//	th.join();
+//	std::cout << x << std::endl;
+//	return 0;
+//}

@@ -14,12 +14,12 @@ void sum(int n)
 		cout << "sum sub thread: " << s << endl;
 	}
 }
-void print(int n)
-{
-	for (int i = 0;i < n;i++)
-		/*cout << i << endl;*/
-		cout << "sub_thread\n";
-}
+//void print(int n)
+//{
+//	for (int i = 0;i < n;i++)
+//		/*cout << i << endl;*/
+//		cout << "sub_thread\n";
+//}
 
 //int main()
 //{
