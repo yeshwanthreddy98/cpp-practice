@@ -1,12 +1,12 @@
-#include<iostream>
-
-template<typename T>
-T* arrayptr(int len)
-{
-	T* ptr = new T[len];
-	return ptr;
-}
-
+//#include<iostream>
+//
+//template<typename T>
+//T* arrayptr(int len)
+//{
+//	T* ptr = new T[len];
+//	return ptr;
+//}
+//
 //int main()
 //{
 //	//int* ptr = arrayptr<int>(3);

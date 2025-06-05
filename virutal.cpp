@@ -1,9 +1,9 @@
-#include<iostream>
-
-// https://pabloariasal.github.io/2017/06/10/understanding-virtual-tables/
-// https://www.youtube.com/watch?v=FncNE2vdtwQ
-//sizeof(obj with virutal functions) = general size + vptr size;
-
+//#include<iostream>
+//
+//// https://pabloariasal.github.io/2017/06/10/understanding-virtual-tables/
+//// https://www.youtube.com/watch?v=FncNE2vdtwQ
+//// sizeof(obj with virutal functions) = general size + vptr size;
+//
 //class Ipl
 //{
 //public:
@@ -42,20 +42,21 @@
 //		std::cout << "grand child class" << std::endl;
 //	}
 //};
-
+//
 //int main()
 //{
-//	//Ipl parent;
-//	//parent.disp();
-//	//Franchise child;
-//	//child.disp();
-//	//std::cout << parent.parent_var << std::endl;
-//	//std::cout << child.parent_var << std::endl;
+//	Ipl parent;
+//	parent.disp();
+//	Franchise child;
+//	child.disp();
+//	std::cout << parent.parent_var << std::endl;
+//	std::cout << child.parent_var << std::endl;
 //
 //
 //	////child.display();
 //	// 
 //	// 
+//
 //	Ipl* pptr = new Ipl;
 //	pptr->disp();
 //	std::cout << pptr->parent_var << std::endl;
@@ -77,35 +78,35 @@
 //	//Franchise* fr = new Player;
 //	//fr->disp();
 //}
-
-class Parent
-{
-public:
-	int parent_var = 10;
-	void disp()
-	{
-		std::cout << "parent function" << std::endl;
-	}
-
-};
-
-class Child :public Parent
-{
-public:
-	Child()
-	{
-		Parent::parent_var = 20;
-	}
-	void disp()
-	{
-		std::cout << "child function" << std::endl;
-	}
-};
-
-//int main()
-//{
-//	Parent parent;
-//	std::cout << parent.parent_var << std::endl;
-//	Child child;
-//	std::cout << child.parent_var << std::endl;
-//}
+//
+////class Parent
+////{
+////public:
+////	int parent_var = 10;
+////	void disp()
+////	{
+////		std::cout << "parent function" << std::endl;
+////	}
+////
+////};
+//
+////class Child :public Parent
+////{
+////public:
+////	Child()
+////	{
+////		Parent::parent_var = 20;
+////	}
+////	void disp()
+////	{
+////		std::cout << "child function" << std::endl;
+////	}
+////};
+//
+////int main()
+////{
+////	Parent parent;
+////	std::cout << parent.parent_var << std::endl;
+////	Child child;
+////	std::cout << child.parent_var << std::endl;
+////}

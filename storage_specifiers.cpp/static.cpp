@@ -12,11 +12,11 @@ using namespace std;
 //int main()
 //{
 //	{
-//		int static_var = 0;
+//		static int static_var = 0;
 //		int non_static_var = 0;
 //		cout << "values inside the block:" << static_var << " " << non_static_var << endl;
 //	}
-//	cout << "values outside the block:" << static_var << " " << non_static_var << endl;
+//	cout << "values outside the block:" << static_var << endl;
 //
 //	return 0;
 //}

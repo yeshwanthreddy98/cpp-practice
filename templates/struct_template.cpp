@@ -1,13 +1,13 @@
-#include<iostream>
-#include<string>
-using namespace std;
-
-template< typename T>
-struct node
-{
-	T data;
-	int cnt;
-};
+//#include<iostream>
+//#include<string>
+//using namespace std;
+//
+//template< typename T>
+//struct node
+//{
+//	T data;
+//	int cnt;
+//};
 
 //int main()
 //{
