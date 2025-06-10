@@ -1,0 +1,6 @@
+1. define auto for some complex iterator type, try to deduce the type of iterator using 
+
+2. i know the class name, i need to iterate through all the objects of that class
+3. use singel method of bubble sort for both ascending and descending --  can be done with callback function
+
+

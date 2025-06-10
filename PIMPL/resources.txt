@@ -1,0 +1,2 @@
+https://learn.microsoft.com/en-us/cpp/cpp/pimpl-for-compile-time-encapsulation-modern-cpp?view=msvc-170
+https://stackoverflow.com/questions/8972588/is-the-pimpl-idiom-really-used-in-practice

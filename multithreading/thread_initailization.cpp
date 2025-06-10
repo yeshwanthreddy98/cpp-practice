@@ -38,25 +38,25 @@ public:
 };
 
 
-//int main()
-//{
-//	int x = 10;
-//	//fib(x);
-//	std::thread fbr(fib, x);
-//	//std::thread th([]() {std::cout << "thread" << std::endl;});
-//	std::cout << "main_Thread started" << std::endl;
-//	fbr.join();
-//	std::cout << x << std::endl;
-//	//std::cout << "sub_thread joined" << std::endl;
-//	//th.join();
-//	//std::thread hv(&Sample::hv, Sample());
-//	//std::thread op(&Sample::operator(), Sample());
-//	//op.join();
-//	//hv.join();
-//	Sample s;
-//	std::thread th(&Sample::operator(), s, 10);
-//	th.join();
-//	std::cout << s.var << std::endl;
-//
-//	return 0;
-//}
+int main()
+{
+	int x = 10;
+	//fib(x);
+	std::thread fbr(fib, x);
+	//std::thread th([]() {std::cout << "thread" << std::endl;});
+	std::cout << "main_Thread started" << std::endl;
+	fbr.join();
+	std::cout << x << std::endl;
+	//std::cout << "sub_thread joined" << std::endl;
+	//th.join();
+	//std::thread hv(&Sample::hv, Sample());
+	//std::thread op(&Sample::operator(), Sample());
+	//op.join();
+	//hv.join();
+	Sample s;
+	std::thread th(&Sample::operator(), s, 10);
+	th.join();
+	std::cout << s.var << std::endl;
+
+	return 0;
+}

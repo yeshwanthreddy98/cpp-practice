@@ -1,0 +1,8 @@
+ ---------- multithread problems ----------
+ the Barber’s chair and the Dining Philosopher’s problem
+ matrix multiplication
+
+ https://www.quora.com/What-is-a-simple-multi-threading-project-idea-in-C-that-I-can-do-to-get-started-learning-multi-threading
+ https ://github.com/methylDragon/coding-notes/blob/master/C++/07%20C++%20-%20Threading%20and%20Concurrency.md
+
+ https://stackoverflow.com/questions/14665546/do-mutexs-in-c-have-to-be-tied-to-some-object-or-variable

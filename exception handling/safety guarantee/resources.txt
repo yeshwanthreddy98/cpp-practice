@@ -1,0 +1,1 @@
+https://stackoverflow.com/questions/1853243/do-you-really-write-exception-safe-code
